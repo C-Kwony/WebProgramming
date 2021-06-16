@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(240, 247, 225);
+}
+
+a:link {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration-line: none;
+}
+
+#top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#poem {
+    font-style: italic;
+}
+
+#instargramID {
+    font-size: 50px;
+}
+
+ul > li {
+    display: inline-block;
+    border: 2px solid orangered;
+    background: rgb(225, 211, 230);
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.clicked {
+    background: tomato;
+}
+
+li:hover {
+    background: gray;
+}
+
+iframe {
+    background-color: rgb(210, 229, 168);
+    width: 1400px;
+    height: 1700px;
+    margin-left: 10%;
+}

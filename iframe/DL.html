@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="최병권">
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="DL.css">
+        <title>DeepLearning</title>
+        <script>
+            window.onload = function () {
+            // 변수를 선언합니다.
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                'media/ai1.png', 'media/ai2.png', 'media/ai3.png', 'media/ai4.png'
+            ];
+            // 타이머 반복을 시작합니다.
+            setInterval( function() {
+                image.src = frames[count % frames.length];
+                count = count + 1;
+            }, 1500);
+        };
+        </script>
+    </head>
+    <body>
+        <nav>
+            <strong>▶ Category</strong><br><br>
+            <a href="#chap4_1">&nbsp;&nbsp;&nbsp;<strong>Machine Learning</strong></a><br><br>
+            <a href="#chap4_2">&nbsp;&nbsp;&nbsp;<strong>Deep Learning</strong></a><br><br>
+            <a href="#chap4_3">&nbsp;&nbsp;&nbsp;<strong>진행중인 프로젝트</strong></a>
+        </nav>
+        <section>
+            <img id="image" src="media/ai4.png" width="700" height="700">
+            <br><br><br>
+            <div class="divs">
+                <h1 id="chap4_1">
+                    Machine Learning
+                </h1>
+                <div>
+                    <strong>기계가 명시적으로 코딩되지 않은 동작을 스스로 학습해 수행하게 하는 연구 분야</strong><br>
+                    예시를 들면, 어떤 학생에게 문제와 답만 있는 수학 문제집을 잔뜩 준다고 하겠습니다.<br>
+                    개념도 공식도 모르니 처음엔 다 틀리겠죠.<br>
+                    그런데 계속해서 문제를 풀다 보면, 머리가 좋은 학생이라면 어쩌다가 점점 문제를 잘 풀게 될 수도 있겠죠?<br>
+                    머신러닝은 그런 기대를 ‘기계’에 하는 겁니다.<br>
+                    어떤 문제와 답을 막 던져주면 기계가 계속 풀어내면서 추상적인 원리를 스스로 깨우치고<br>
+                    새로운 문제가 주어져도 스스로 답을 낼 수 있게 하는 것이 ‘머신 러닝’입니다.
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="divs">
+                <h1 id="chap4_2">
+                    Deep Learning
+                </h1>
+                <div>
+                    <strong>딥러닝은 머신러닝의 발달한 형태</strong><br>
+                    머신러닝의 경우 알고리즘에 입력 하기 전 필요한 특징을 사람이 직접 선정해야 합니다.<br>
+                    예를 들어 사람의 나이를 추정한다고 하면, 얼굴의 주름 개수, 피부 색상의 균일도, 특정 주름의 짙은 정도,<br>
+                    머리카락의 색깔과 같이 나이를 추정하는 데에 유용한 ‘특징’을 사람이 먼저 선택해야 하는거죠.<br>
+                    그런데 딥러닝의 경우에는 ‘특징’을 선정하는 부분까지 한꺼번에 학습합니다.<br>
+                    머신러닝과 달리 사람 얼굴을 찍은 사진을 입력으로 넣어주면, 스스로 어떤 특징이 나이를 추정하는 데에 유용한지 알아내는 거죠.<br>
+                    그런 식으로 사람이 좀 더 손을 대 줘야 하던 부분들을 컴퓨터가 더 많이 처리해주는 편리함이 있습니다.
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="divs">
+                <h1 id="chap4_3">
+                    진행중인 프로젝트
+                </h1>
+                <div>
+                    저처럼 주 전공이 생물학인 친구들과 모여 약물반응성 예측 모델을 만드는 프로젝트를 진행중입니다.<br>
+                    모든 세포에는 유전자들이 있지만, 유전자들이 얼마나 발현되는지 각각 다릅니다.<br>
+                    암세포의 cell line에서의 발현량을 model의 input data로 사용했을때<br>
+                    이미 학습된 모델이 암환자에게 어울리는 항암제를 추천해줄 수 있도록 만들고있습니다.
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

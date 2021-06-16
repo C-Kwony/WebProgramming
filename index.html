@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="author" content="최병권">
+	<meta name="description" content="생물학과 BI의 소개">
+	<meta name="keyword" content="생물학,BI,Bioinformatics,DeepLearning">
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="index.css">
+	<title>C.Kwony</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("li#menu_home").click(function(event) {
+				$("li").removeClass("clicked");
+				$("li#menu_home").addClass("clicked");
+				$("iframe").attr("src", "iframe/Home.html")
+			});
+		});
+		$(document).ready(function() {
+			$("li#menu_biology").click(function(event) {
+				$("li").removeClass("clicked");
+				$("li#menu_biology").addClass("clicked");
+				$("iframe").attr("src", "iframe/Bio.html")
+			});
+		});
+		$(document).ready(function() {
+			$("li#menu_BI").click(function(event) {
+				$("li").removeClass("clicked");
+				$("li#menu_BI").addClass("clicked");
+				$("iframe").attr("src", "iframe/BI.html")
+			});
+		});
+		$(document).ready(function() {
+			$("li#menu_DL").click(function(event) {
+				$("li").removeClass("clicked");
+				$("li#menu_DL").addClass("clicked");
+				$("iframe").attr("src", "iframe/DL.html")
+			});
+		});
+	</script>
+</head>
+<body id="body" onload="time()">
+	<header>
+		<a href="https://www.instagram.com/c.kwony/" id="cKwony">
+			<div id="poem">Tomorrow hopes we learned something from yesterday</div>
+			<strong id="instargramID">&nbsp;&nbsp;&nbsp;C.Kwony</strong>
+			<img id="instargram" src="iframe/media/인스타.jpg" width="40" height="40">
+		</a>
+	</header>
+	<br>
+	<nav>
+		<ul>
+			<li id = "menu_home"  class="menu clicked" style="margin-left: 22%;"><strong>HOME</strong></li>
+			<li id = "menu_biology" class="menu"><strong>BIOLOGY</strong></li> 
+			<li id = "menu_BI" class="menu"><strong>BIOINFORMATICS</strong></li> 
+			<li id = "menu_DL" class="menu"><strong>DEEP LEARNING</strong></li>
+		</ul>
+	</nav>
+	<br>
+	<br>
+	<iframe src="iframe/Home.html">
+	</iframe>
+	<a id="top" href="#body">
+		<strong style="font-size: larger;">▲ TOP</strong>
+	</a>
+	<footer style="margin-left: 10%;">
+		의생명공학과<br>
+		201513163<br>
+		최병권
+	</footer>
+</body>
+</html>

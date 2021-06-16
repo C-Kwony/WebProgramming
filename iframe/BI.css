@@ -1,0 +1,62 @@
+nav > a:link {
+    color: black;
+    text-decoration-line: none;
+}
+
+nav > a:visited {
+    color: black;
+    text-decoration-line: none;
+}
+
+
+nav {
+    float: left;
+    width: 200px;
+    border: 2px solid orangered;
+    padding: 20px;
+    background: white;
+}
+
+a:hover {
+    background: gray;
+}
+
+section {
+    float: right;
+    width: 1000px;
+}
+
+img {
+    float: left;
+    margin: 10px;
+}
+
+.divs {
+    background-color: white;
+    width: 900px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+div > div {
+    float: left;
+}
+
+#div1 {
+    position: absolute;
+    left: 400px;
+    top: 500px;
+}
+
+#div2 {
+    position: absolute;
+    left: 400px;
+    top: 900px;
+}
+
+#video {
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 2px solid black;
+}
